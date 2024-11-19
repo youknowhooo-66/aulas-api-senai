@@ -1,0 +1,111 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+#container {
+    background-color: black;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#topo {
+    width: 100%;
+    height: 20%;
+    background: linear-gradient(to bottom, #8C7A5B, #B89F72, #A28460);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+    border-bottom: 2px solid #818181;
+}
+
+#meio {
+    display: flex;
+    background: linear-gradient(to bottom, #004d66, #06649A, #0099cc);
+    height: 80%;
+    width: 100%;
+}
+
+#filtros {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: 100%;
+    background-color: rgb(192, 230, 255);
+    align-items: center;
+    justify-content: center;
+    border-right: 2px solid #818181;
+}
+
+#filtros label {
+    margin: 10px 0;
+}
+
+.logo {
+    height: 60%;
+    margin-left: 7%;
+    transition: transform 0.3s ease-in-out;
+}
+.logo:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.profile {
+    height: 60%;
+    margin-right: 7%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.profile:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+
+}
+
+@font-face {
+    font-family: coolvetica;
+    src: url(coolvetica/coolvetica\ rg.otf);
+}
+
+.cardapio {
+    font-family: adigiana;
+    font-size: xxx-large;
+    color: #ffffff;
+}
+
+@font-face {
+    font-family: adigiana;
+    src: url(Adigiana-Toybox-Regular/AdigianaUI.ttf);
+}
+
+.titulo {
+    font-weight: 600;
+    font-size: xxx-large;
+    font-family: coolvetica;
+    letter-spacing: 2px;
+    
+    
+}
+
+.filtros {
+    font-family: coolvetica;
+    letter-spacing: 3px;
+    
+    
+}
+
+.filtros{
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.filtros:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
