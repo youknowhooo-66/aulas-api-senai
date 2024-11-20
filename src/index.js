@@ -1,19 +1,19 @@
 import cors from "cors";
 import express from "express";
+import UsuariosController from "./controllers/UsuariosController.js";
 
 const app = express();
 app.use(express.json());
 app.use(cors({ origin: "*" }));
 
 // Rotas de /usuarios
+const usuariosController = new UsuariosController();
 const listaUsuarios = [];
 app.get("/usuarios", (req, res) => {
   res.send(listaUsuarios);
 });
-app.post("/usuarios", (req, res) => {
-  listaUsuarios.push(req.body);
-  res.status(201).send(req.body);
-});
+app.post("/usuarios", usuariosController.adicionar);
+
 app.put("/usuarios", (req, res) => {
   res.send("Chamou o PUT!");
 });
