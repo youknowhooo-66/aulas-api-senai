@@ -1,4 +1,4 @@
-import ConexaoMySql from "../database/ConexaoMySql";
+import ConexaoMySql from '../database/ConexaoMySql.js';
 
 class UsuariosController {
 async adicionar(req, resp) {
